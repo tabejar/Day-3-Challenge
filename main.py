@@ -38,5 +38,8 @@ reverse = prompt[::-1]
 print(reverse)
 
 python = "python"
-print("the word python appears " + str(prompt.count(python)) + " times")
+ifPython = prompt.count(python)
+print("the word python appears in text : " + str(ifPython > 0))
+
+
       
