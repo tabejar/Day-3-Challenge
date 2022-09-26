@@ -1,4 +1,4 @@
-# fork this challenge to your own repl
+ # fork this challenge to your own repl
 #share this challenge with another person in the room.
 
 #Day 3 Python Challenge
@@ -17,5 +17,26 @@
 
 prompt = input("Please type: ")
 print(prompt)
+
+letter1 = input("Please type the first letter: ")
+letter2 = input("Please type the second letter: ")
+letter3 = input("Please type the third letter: ")
+
 myList = list(prompt)
-print(myList.count('f'))
+print("this letter appears " + str(myList.count(letter1)) + " times")
+print("this letter appears " + str(myList.count(letter2)) + " times.")
+print("This letter appears " + str(myList.count(letter3)) + " times.")
+print("there is " + str(len(myList)) + " characters in your text")
+
+firstletter = prompt[0]
+lastletter = prompt[-1]
+
+print("the first character of the text is : " + str(firstletter) )
+print("the last character of the text is : " + str(lastletter) )
+
+reverse = prompt[::-1]
+print(reverse)
+
+python = "python"
+print("the word python appears " + str(prompt.count(python)) + " times")
+      
